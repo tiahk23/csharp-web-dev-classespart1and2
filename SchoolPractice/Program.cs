@@ -6,7 +6,26 @@ namespace SchoolPractice
     {
         public static void Main(string[] args)
         {
-            // TODO: Instantiate your objects and test your exercise solutions with print statements here.
+           
+        }
+        public class Student
+        {
+            private string name = "Tiah";
+            private int numberOfCredits = 1;
+            private double gpa = 4.0;
+        }
+
+        public class Course
+        {
+            private string 
+        }
+
+        public class Teacher
+        {
+            private string firstName;
+            private string lastName;
+            private string subject;
+            private string yearsTeaching;
         }
     }
 }
