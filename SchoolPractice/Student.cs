@@ -32,6 +32,8 @@ namespace SchoolPractice
         public void AddGrade(int courseCredits, double grade)
         {
             // Update the appropriate properties: NumberOfCredits, Gpa
+            NumberOfCredits = courseCredits++;
+            Gpa = grade * courseCredits / NumberOfCredits;
         }
 
         //GetGradeLevel method here:
