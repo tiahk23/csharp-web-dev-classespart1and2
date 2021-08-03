@@ -1,7 +1,4 @@
-﻿using System;
-
-// Start working here with your Student class.
-// To instantiate the Student class, add your code to the Main method in Program
+﻿
 
 namespace SchoolPractice
 {
@@ -31,17 +28,37 @@ namespace SchoolPractice
             nextStudentId++;
         }
 
-        // TODO: Complete the AddGrade method.
+        //AddGrade method.
         public void AddGrade(int courseCredits, double grade)
         {
             // Update the appropriate properties: NumberOfCredits, Gpa
         }
 
-        //TODO: Complete the GetGradeLevel method here:
+        //GetGradeLevel method here:
         public string GetGradeLevel(int credits)
         {
-            // Determine the grade level of the student based on NumberOfCredits
-            return "grade level tbd";
+            NumberOfCredits = credits;
+            if (credits <= 29)
+            {
+                return "Freshman";
+            }
+            else if (credits <= 59 && credits >= 30)
+            {
+                return "Sophomore";
+            }
+            else if (credits <= 60 && credits >= 89)
+            {
+                return "Junior";
+            }
+            else if (credits >= 90)
+            {
+                return "Senior";
+            }
+            else
+            {
+                return "Not a valid input";
+            }
+
         }
 
         // TODO: Add your custom 'ToString' method here. Make sure it returns a well-formatted string rather
