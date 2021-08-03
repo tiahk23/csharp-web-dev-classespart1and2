@@ -35,9 +35,9 @@ namespace SchoolPractice
         }
 
         //GetGradeLevel method here:
-        public string GetGradeLevel(int credits)
+        public static string GetGradeLevel(int credits)
         {
-            NumberOfCredits = credits;
+            
             if (credits <= 29)
             {
                 return "Freshman";
