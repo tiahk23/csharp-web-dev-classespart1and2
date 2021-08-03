@@ -63,11 +63,33 @@ namespace SchoolPractice
 
         }
 
-        // TODO: Add your custom 'ToString' method here. Make sure it returns a well-formatted string rather
-        //  than just the class fields.
+        public override string ToString()
+        {
+            return Name + " (Credits: " + NumberOfCredits + ", GPA: " + Gpa + ")";
+        }
+        public override boolean Equals(object toBeCompared)
+        {
 
-        // TODO: Add your custom 'Equals' method here. Consider which fields should match in order to call two
-        //  Student objects equal.
+            if (toBeCompared == this)
+            {
+                return true;
+            }
+
+            if (toBeCompared == null)
+            {
+                return false;
+            }
+
+            if (toBeCompared.GetType() != this.GetType())
+            {
+                return false;
+            }
+
+            Student s = toBeCompared as Student;
+            return s.StudentId == StudentId;
+        }
+
+        
 
     }
 }
