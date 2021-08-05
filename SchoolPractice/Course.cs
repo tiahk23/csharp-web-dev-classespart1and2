@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SchoolPractice
 {
-    class Course
+    public class Course
     {
         public string Topic { get; set; }
         public Teacher Instructor { get; set; }
@@ -12,10 +12,10 @@ namespace SchoolPractice
 
         public override string ToString()
         {
-            return Topic + " (Topic: " + Instructor + ", Instructor: " + enrolledStudents+ ")";
+            return Topic + " (Topic: " + Instructor + ", Instructor: " + enrolledStudents + ")";
         }
 
-        public override boolean Equals(object coursesCompared)
+        public override bool Equals(object coursesCompared)
         {
 
             if (coursesCompared == this)

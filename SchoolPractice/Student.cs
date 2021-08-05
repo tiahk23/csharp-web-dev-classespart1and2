@@ -52,14 +52,11 @@ namespace SchoolPractice
             {
                 return "Junior";
             }
-            else if (credits >= 90)
+            else
             {
                 return "Senior";
             }
-            else
-            {
-                return "Not a valid input";
-            }
+            
 
         }
 
@@ -67,7 +64,7 @@ namespace SchoolPractice
         {
             return Name + " (Credits: " + NumberOfCredits + ", GPA: " + Gpa + ")";
         }
-        public override boolean Equals(object toBeCompared)
+        public override bool Equals(object toBeCompared)
         {
 
             if (toBeCompared == this)
